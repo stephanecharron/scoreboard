@@ -28,4 +28,9 @@ public class Goal {
     public void setPlayerNane(String playerNane) {
         this.playerNane = playerNane;
     }
+
+    @Override
+    public String toString() {
+        return this.playerNane + ' ' + this.time;
+    }
 }
