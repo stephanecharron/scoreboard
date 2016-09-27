@@ -1,1 +1,42 @@
 
+Football Scoring Dashboard
+
+Develop an application that prints out a scoring dashboard as text during a football match.
+
+The football scoring dashboard would have output the following at the 80th minute in the
+
+1966 Football world cup final between England and West Germany: "England 2 (Hurst 18' Peters 78') vs. West Germany 1 (Haller 12')". The application’s required inputs are singular entries following the following flow:
+
+
+
+1. The Football Scoring Dashboard needs to know when a game starts through being supplied a string of this format: "Start: '<Name of Home Team>' vs. '<Name of Away Team>'".
+
+a. Example: "Start: 'England' vs. 'West Germany'"
+
+
+
+2. After the start command has been given, acceptable inputs to tell the Dashboard when goals are scored follow the following structure: "<minute> '<Team>' <name of scorer>".
+
+a. Example: "11 'West Germany' Haller"
+
+
+
+3. The tool should be able to compute the 'print' command at any time during the course of a game to print the aggregated scoring statistics of the match.
+
+a. Example: If tool is given the 'print' command, it should output the following: "England 0 vs. West Germany 1 (Haller 12')" if that is the only goal that has been scored at that point.
+
+
+4. The Dashboard knows a game has ended through the 'End' command.
+
+
+
+5. The tool should cater for the following error conditions:
+
+a. If the Football Scoring Dashboard is given any commands while a game is not in progress it should report 'No game currently in progress'.
+
+b. If a game is in progress and it is not able to understand the given command it should return: 'input error - please type 'print' for game details'.
+
+c. If a game is not in progress and it is not able to understand the given command, it should return: 'input error - please start a game through typing 'Start:
+
+'<Name of Home Team>' vs. '<Name of Away Team>''.
+
