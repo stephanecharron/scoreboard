@@ -32,7 +32,7 @@ public class TestConfig {
     }
 
     @Bean
-    CommandStrategies commandValidation (){ return new CommandStrategies(); }
+    CommandValidation commandValidation (){ return new CommandValidation(); }
 
     @Bean
     public AddGoal addGoal() {

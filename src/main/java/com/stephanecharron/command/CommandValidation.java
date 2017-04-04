@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Aspect
 @Service
-public class CommandStrategies {
+public class CommandValidation {
 
     @Autowired
     private Game game;

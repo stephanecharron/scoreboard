@@ -25,7 +25,7 @@ public class ClientHandler implements CommandLineRunner {
 
     @Override
     @Order(Ordered.HIGHEST_PRECEDENCE)
-    public void run(String... strings) throws Exception {
+    public void run(String... strings) throws RuntimeException {
 
 
         final String GREETING = "Enter scoreboard command";
